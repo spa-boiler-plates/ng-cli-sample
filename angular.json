@@ -7,7 +7,7 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "app",
+      "prefix": "clisample",
       "schematics": {},
       "architect": {
         "build": {
@@ -123,5 +123,10 @@
       }
     }
   },
-  "defaultProject": "ng-cli-sample"
+  "defaultProject": "ng-cli-sample",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
